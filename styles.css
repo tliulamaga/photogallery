@@ -1,0 +1,286 @@
+/* ----------------------------CSS Reset--------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------------------------Root Variables--------------------------- */
+:root {
+    --clr-green: #007d7b;
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+}
+/* ----------------------------Global Styles--------------------------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	font-size: 1.25em;
+}
+
+figcaption, label, input, small {
+	font-size: 1em;
+}
+
+nav a {
+	font-size: 1.5em;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+/* ----------Colors and Spacing------------- */
+body {
+	background-color: var(--clr-black);
+}
+
+ .main {
+	background-color: var(--clr-white);
+}
+
+h1 {
+	color: var(--clr-green);
+	background-color: var(--clr-white);
+	padding: 5px;
+
+}
+
+h2 {
+	text-align: center;
+	padding: 5px;
+	padding-bottom: 30px;
+} 
+
+.intro {
+	padding-bottom: 20px;
+}
+
+
+p {
+	padding-bottom: 5px;
+}
+
+a {
+	color: var(--clr-white);
+}
+
+footer h2 {
+	color: var(--clr-white);
+}
+
+footer p {
+	color: var(--clr-white);
+}
+
+footer h2 {
+	color: var(--clr-white);
+}
+
+footer ::placeholder {
+	color: var(--clr-green);
+}
+
+
+a {
+	padding: 10px;
+	text-decoration-line: none;
+}
+
+.topnavigation {
+	position:fixed;
+	top: 700px;
+	list-style: none;
+}
+
+
+/* Figure and Figcaption styles */
+ 
+ figure {
+	position: relative;
+}
+
+figcaption {
+	z-index: 1;
+	position: absolute;
+	left:140px;
+	bottom: 15px;
+} 
+
+figure:nth-child(2) {
+	 color: var(--clr-white);
+}
+
+figure:nth-child(3) {
+	color: var(--clr-white);
+}
+
+figure:nth-child(4) {
+	color: var(--clr-white);
+}
+
+figure:nth-child(8) {
+	color: var(--clr-white);
+}
+
+figure:nth-child(13) {
+	color: var(--clr-white);
+} 
+
+.textadjusts {
+	bottom: 210px;
+}
+
+.textadjustsbig {
+	bottom: 500px;
+}
+
+
+/* Footer styles */
+
+
+ input {
+	width: 400px;
+ }
+
+button {
+	position: relative;
+	font-weight: bold;
+	border-radius: 10%;
+	margin:30px;
+	width: 200px;
+	height: 40px;
+	background-color: var(--clr-green);
+	color: var(--clr-white);
+}
+
+footer p:nth-child(3) {
+	margin: 3px;
+} 
+
+footer p:nth-child(5) {
+	margin: 3px;
+} 
+
+footer p:nth-child(7) {
+	margin: 3px;
+} 
+ footer {
+	text-align:center;
+ }
+
+
+
+/* ----------------------------Small--------------------------- */
+
+@media (min-width: 485px)
+{
+
+	body {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+
+	.text {
+		padding-left: 10px;
+	}
+
+	h1 { 
+		text-align:center;
+	}
+
+	ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	nav {
+		padding: 20px;
+	}
+	
+	img {
+		width: 350px;
+		padding-left: 20px;
+	}
+
+	.column {
+		display: grid;
+		grid-template-columns:1fr;
+	}
+}
+/* ----------------------------Medium--------------------------- */
+@media (min-width: 880px) {
+	h1 {
+		text-align: left;
+}
+
+	.column {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	input { 
+		width: 700px;
+	}
+} 
+/* ----------------------------Large--------------------------- */
+@media (min-width:1300px) {
+	.column {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+	}
+	
+	ul {
+		justify-content:right;
+	}
+
+	input {
+		width: 900px;
+	}
+
+
+}
